@@ -16,7 +16,6 @@ public class ballStop : MonoBehaviour {
 
 
 	
-       
 	}
 	
 	// Update is called once per frame
@@ -34,15 +33,28 @@ public class ballStop : MonoBehaviour {
 
         }
         
+
         if(ballHitTimes >= 6)
         {
             //ballHitTimes = 0;
+            Debug.Log("i'm fucking OUT!");
+
             this.GetComponent<Collider2D>().isTrigger = true;  //
 
-            Destroy(GetComponent<ballStop>());  //破坏脚本
+            Destroy(this);
 
+            //Destroy(GetComponent<ballStop>());  //破坏脚本
+            
 
         }
 
     }
+
+    void CreateBall()
+    {
+
+
+
+    }
+
 }

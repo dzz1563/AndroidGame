@@ -18,6 +18,8 @@ public class config : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+
 	
 	}
 }
